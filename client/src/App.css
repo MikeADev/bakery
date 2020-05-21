@@ -1,0 +1,37 @@
+:root {
+  --darkPink: #E52058;
+  --Pink: #E999C4;
+  --lightBlue: #97C4E8;
+  --Mint: #85EBE2;
+  --Chocolate: #5C3A31;
+  
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: var(--Chocolate);
+  font-size: 75px;
+}
+
+.title {
+  font-weight: 400;
+  color: var(--Pink)
+}
+
+.heading {
+  font-family: "Thirsty Rough Lt Thr", serif;
+  font-weight: 400;
+  color: var(--darkPink);
+}
+
+.subheading {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  color: var(--lightBlue)
+}
+
+.quote {
+  font-style: italic;
+  color: var(--Mint)
+}
