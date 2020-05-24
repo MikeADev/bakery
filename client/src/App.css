@@ -1,37 +1,84 @@
 :root {
-  --darkPink: #E52058;
-  --Pink: #E999C4;
-  --lightBlue: #97C4E8;
-  --Mint: #85EBE2;
-  --Chocolate: #5C3A31;
-  
+  --Maroon: #320A12;
+  --DarkPink: #882C43;
+  --OffWhite: #E3DAE1;
+  --Purple: #9A6EAB;
+  --Lavendar: #B88FCC;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--Maroon);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--DarkPink);
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  color: var(--Chocolate);
-  font-size: 75px;
 }
 
 .title {
   font-weight: 400;
-  color: var(--Pink)
 }
 
 .heading {
   font-family: "Thirsty Rough Lt Thr", serif;
   font-weight: 400;
-  color: var(--darkPink);
 }
 
 .subheading {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
-  color: var(--lightBlue)
 }
 
 .quote {
   font-style: italic;
-  color: var(--Mint)
+}
+
+.navbar {
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.navbar-nav {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:last-child {
+  margin-left: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
 }
