@@ -1,9 +1,9 @@
 :root {
-  --Maroon: #320A12;
-  --DarkPink: #882C43;
-  --OffWhite: #E3DAE1;
-  --Purple: #9A6EAB;
-  --Lavendar: #B88FCC;
+  --Pink: #FEACCD;
+  --Pistachio: #DAEBDB;
+  --DarkPink: #FF7077;
+  --LightBlue: #E1F7FF;
+  --Beige: #FBF6EB;
   font-size: 16px;
 }
 
@@ -30,6 +30,18 @@ body {
   font-weight: 700;
 }
 
+.pistachio {
+  background-color: var(--Pistachio);
+}
+
+.beige {
+  background-color: var(--Beige);
+}
+
+.light-blue {
+  background-color: var(--LightBlue);
+}
+
 .title {
   font-weight: 400;
 }
@@ -41,7 +53,7 @@ body {
 
 .subheading {
   font-family: "Libre Baskerville", serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .quote {
@@ -74,11 +86,41 @@ body {
   width: 5rem;
 }
 
-a {
+.nav-item a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: var(--Pink);
+  transition: color .5s;
+}
+
+.active {
+  color: var(--Pink);
+}
+
+section:first-of-type {
+  margin-top: 5rem;
+}
+
+.section-content {
+
+}
+
+section {
+  height: 500px;
+}
+
+.parallax {
+  background-image: url("assets/images/baked-beautiful-birthday-birthday-cake-302552.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

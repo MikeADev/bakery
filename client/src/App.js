@@ -8,6 +8,7 @@ import Details from './components/Details';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Home from './components/Home';
+import About from './components/About';
 
 class App extends Component {
   render() {
@@ -16,10 +17,11 @@ class App extends Component {
         <Navbar />
         <main>
           <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/details" component={Details}/>
-            <Route path="/cart" component={Cart}/>
-            <Route component={Default}/>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/products" component={ProductList} />
+            <Route path="/cart" component={Cart} />
+            <Route component={Default} />
           </Switch>
         </main>
       </Router>

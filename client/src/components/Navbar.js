@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav subheading">
                     <li className="nav-item">
-                        <Link to={`/`}>Home</Link>
+                        <NavLink activeClassName='active' exact to={`/`}>Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to={`/`}>About</Link>
+                        <NavLink activeClassName='active' to={`/about`}>About</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to={`/products`}>Products</Link>
+                        <NavLink activeClassName='active' to={`/products`}>Products</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to={`/contact`}>Contact</Link>
+                        <NavLink activeClassName='active' to={`/contact`}>Contact</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to={`/cart`}>Cart</Link>
+                        <NavLink activeClassName='active' to={`/cart`}>Cart</NavLink>
                     </li>
                 </ul>
             </nav>
