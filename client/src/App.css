@@ -4,6 +4,8 @@
   --DarkPink: #FF7077;
   --LightBlue: #E1F7FF;
   --Beige: #FBF6EB;
+  --TextDark: #333739;
+  --TextLight: #737373;
   font-size: 16px;
 }
 
@@ -52,8 +54,15 @@ body {
 }
 
 .subheading {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Lora", serif;
   font-weight: 700;
+}
+
+.content-paragraph {
+  line-height: 2.25rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .quote {
@@ -82,38 +91,81 @@ body {
 .nav-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 5rem;
-  width: 5rem;
+  min-width: 8rem;
 }
 
 .nav-item a {
+  position: relative;
+  color: var(--TextDark);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-item a::after {
+  content: "";
+  background-color: var(--Pink);
+  height: 3px;
+  width: 107%;
+  position: absolute;
+  visibility: hidden;
+  top: 1.3rem;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
 }
 
 .nav-item a:hover {
   color: var(--Pink);
-  transition: color .5s;
+  transition: color .3s;
 }
 
-.active {
+.nav-item .active {
   color: var(--Pink);
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;      
+  display: block;
+  height: 10px;
+  bottom: -10px; /* -height */
+  left:0;
+  right:0;
+
+  /* TODO Add browser prefixes */
+  background:
+    linear-gradient(
+      25deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    ),linear-gradient(
+      -25deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    );
+
+    background-size: 12px 20px; /* toothSize doubleHeight */
+    background-position: 0 -10px;
 }
 
 section:first-of-type {
   margin-top: 5rem;
 }
 
-.section-content {
-
-}
-
 section {
-  height: 500px;
+  min-height: 500px;
 }
 
 .parallax {

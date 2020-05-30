@@ -8,22 +8,22 @@ export default class Home extends Component {
                     <div className="parallax"></div>
                 </section>
                 <section>
-                    <h1 className="subheading">Liz's Cake Shop</h1>
+                    <p className="content-paragraph">The Tasty Pastry</p>
                 </section>
                 <section className="beige">
-                    <h1 className="subheading">Liz's Cake Shop</h1>
+                    <p className="content-paragraph">The Tasty Pastry</p>
                 </section>
                 <section>
-                    <h1 className="subheading">Liz's Cake Shop</h1>
+                    <p className="content-paragraph">The Tasty Pastry</p>
                 </section>
                 <section>
                     <div className="parallax"></div>
                 </section>
                 <section>
-                    <h1 className="subheading">Liz's Cake Shop</h1>
+                    <p className="content-paragraph">The Tasty Pastry</p>
                 </section>
                 <section className="light-blue">
-                    <h1 className="subheading">Liz's Cake Shop</h1>
+                    <p className="content-paragraph">The Tasty Pastry</p>
                 </section>
             </React.Fragment>  
         )
