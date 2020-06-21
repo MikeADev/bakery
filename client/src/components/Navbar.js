@@ -8,8 +8,7 @@ export default class Navbar extends Component {
                 <nav className="navbar">
                     <ul className="navbar-nav subheading">
                         <li className="nav-item">
-                            <NavLink activeClassName='active' exact to={`/`}>Home</NavLink>
-                            
+                            <NavLink activeClassName='active' exact to={`/`}>Home</NavLink> 
                         </li>
                         <li className="nav-item">
                             <NavLink activeClassName='active' to={`/about`}>About</NavLink>

@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Home from './components/Home';
 import About from './components/About';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route component={Default} />
           </Switch>
         </main>
+        <Footer />
       </Router>
       
     );
